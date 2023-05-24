@@ -4,9 +4,23 @@
 module.exports = {
   siteMetadata: {
     title: `testing-gatsby-theme`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
+    sgData: {
+      yearFounded: 2018,
+      yearCompleted: 25,
+      countries: 160,
+      employees: 400,
+      cities: 900,
+      workers: 6000,
+      warehouses: 600,
+      customers: 1000,
+      managedPrograms: 3000,
+      managedProgramsSites: 100000,
+      globalVendors: 500,
+      alliancePartners: 60,
+    },
   },
-  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
