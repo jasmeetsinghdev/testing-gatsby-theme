@@ -6,6 +6,12 @@ Version:	3.2.1
 Author:		elemis
 */
 .jasmeettest { color: red; }
+.todoList { transition: 0.3s all;}
+.completedTodo { opacity: 0.5; scale: 0.8; transition: 0.3s all; }
+.completedTodo p { text-decoration: line-through; }
+.peraTodo p { font-size: 1.5em; font-weight: bold; color: #000; }
+.todoList .btn { opacity: 0; transition: 0.3s all; visibility: hidden; }
+.todoList:hover .btn { opacity: 1; visibility: visible; }
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700");
 :root {
   --bs-gray-100: #fefefe;
