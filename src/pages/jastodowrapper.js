@@ -7,14 +7,7 @@ import { v4 as uuidv4 } from 'uuid';
 uuidv4();
 
 const Jastodo = () => {
-  const [toDos, setTodos] = useState(() => {
-    const savedTodos = localStorage.getItem("toDos");
-    if (savedTodos) {
-      return JSON.parse(savedTodos);
-    } else {
-      return [];
-    }
-  });
+  const [toDos, setTodos] = useState([]);
 
   const [count, setCount] = useState();
 
